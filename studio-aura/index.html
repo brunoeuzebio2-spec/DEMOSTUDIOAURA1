@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Aura — Estética e Beleza</title>
+<meta name="description" content="Studio Aura — tratamentos de estética personalizados. Agende pelo WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- sprite de ícones -->
+<div id="icon-sprite"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#topo" class="brand" id="brand-logo">Studio Aura</a>
+
+    <nav class="nav" id="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn--ghost-header" id="header-whatsapp" target="_blank" rel="noopener">
+      <svg class="icon icon--sm"><use href="#icon-whatsapp"></use></svg>
+      <span>Agendar</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+      <svg class="icon"><use href="#icon-menu"></use></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Fechar menu">
+    <svg class="icon"><use href="#icon-close"></use></svg>
+  </button>
+  <a href="#sobre">Sobre</a>
+  <a href="#tratamentos">Tratamentos</a>
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#contato">Contato</a>
+</div>
+
+<main id="topo">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="hero__slogan" id="hero-slogan"></p>
+        <h1 class="hero__title" id="hero-title"></h1>
+        <p class="hero__subtitle" id="hero-subtitle"></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" id="hero-btn-primary" target="_blank" rel="noopener"></a>
+          <a class="btn btn--outline" id="hero-btn-secondary" href="#tratamentos"></a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <div class="hero__media-frame">
+          <img id="hero-image" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. APRESENTAÇÃO ============ -->
+  <section class="intro" id="sobre">
+    <div class="container intro__grid">
+      <div class="intro__media">
+        <img id="intro-image" src="" alt="">
+      </div>
+      <div class="intro__content">
+        <h2 id="intro-heading"></h2>
+        <p id="intro-text"></p>
+        <a class="btn btn--outline" id="intro-btn" href="#contato"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. SERVIÇOS ============ -->
+  <section class="services" id="tratamentos">
+    <div class="container">
+      <h2 class="section-title" id="services-heading"></h2>
+      <div class="services__grid" id="services-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 4. DIFERENCIAIS ============ -->
+  <section class="differentials" id="diferenciais">
+    <div class="container differentials__grid">
+      <h2 class="differentials__title" id="differentials-heading"></h2>
+      <div class="differentials__list" id="differentials-list"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. GALERIA ============ -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <h2 class="section-title" id="gallery-heading"></h2>
+      <div class="gallery__grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. DEPOIMENTOS ============ -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title" id="testimonials-heading"></h2>
+      <p class="testimonials__notice" id="testimonials-notice"></p>
+      <div class="testimonials__grid" id="testimonials-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 7. CTA ============ -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2 id="cta-heading"></h2>
+      <p id="cta-text"></p>
+      <a class="btn btn--light" id="cta-btn" target="_blank" rel="noopener"></a>
+    </div>
+  </section>
+
+  <!-- ============ 8. LOCALIZAÇÃO ============ -->
+  <section class="location" id="contato">
+    <div class="container location__grid">
+      <div class="location__info">
+        <h2 id="location-heading"></h2>
+
+        <div class="location__row">
+          <svg class="icon"><use href="#icon-pin"></use></svg>
+          <div>
+            <p id="location-address1"></p>
+            <p id="location-address2"></p>
+          </div>
+        </div>
+
+        <div class="location__row" id="location-hours-wrap">
+          <svg class="icon"><use href="#icon-clock"></use></svg>
+          <div id="location-hours"></div>
+        </div>
+
+        <a class="btn btn--primary" id="location-btn" target="_blank" rel="noopener"></a>
+      </div>
+      <div class="location__panel">
+        <svg class="icon icon--xl"><use href="#icon-pin"></use></svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 9. FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <p class="footer__logo" id="footer-logo"></p>
+      <p id="footer-about"></p>
+    </div>
+
+    <div class="footer__col">
+      <h3>Contato</h3>
+      <p id="footer-phone"></p>
+      <p id="footer-email"></p>
+    </div>
+
+    <div class="footer__col">
+      <h3>Endereço</h3>
+      <p id="footer-address1"></p>
+      <p id="footer-address2"></p>
+    </div>
+
+    <div class="footer__col">
+      <h3>Horário</h3>
+      <div id="footer-hours"></div>
+    </div>
+
+    <div class="footer__social">
+      <a id="footer-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+      </a>
+      <a id="footer-instagram" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg class="icon"><use href="#icon-instagram"></use></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p id="footer-credit"></p>
+  </div>
+</footer>
+
+<!-- botão flutuante de WhatsApp -->
+<a class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+</a>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
